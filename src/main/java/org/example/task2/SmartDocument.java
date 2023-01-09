@@ -9,12 +9,15 @@ import com.google.cloud.vision.v1.Image;
 import com.google.cloud.vision.v1.ImageAnnotatorClient;
 import com.google.cloud.vision.v1.ImageSource;
 import com.google.cloud.vision.v1.TextAnnotation;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.SneakyThrows;
 import org.example.task2.Document;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Getter
+@Setter
 public class SmartDocument extends Document {
     public String gcsPath;
 
